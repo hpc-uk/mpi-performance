@@ -1,0 +1,126 @@
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2018, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Thu Mar  7 13:15:18 2019
+# Machine               : aarch64
+# System                : Linux
+# Release               : 4.4.156-94.64-default
+# Version               : #1 SMP Fri Oct 19 07:43:21 UTC 2018 (31f2eb8)
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# ./IMB-MPI1 Allgatherv -npmin 1024 -mem 4 -time 30
+#           
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Allgatherv
+
+#----------------------------------------------------------------
+# Benchmarking Allgatherv 
+# #processes = 1024 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+            0         1000        84.05        93.37        88.59
+            1         1000       150.45       162.01       155.12
+            2         1000       182.00       194.82       188.10
+            4         1000       184.94       197.11       190.72
+            8         1000       187.06       201.10       193.89
+           16         1000       191.10       206.34       198.09
+           32         1000       203.01       220.78       211.02
+           64         1000       227.79       247.68       237.61
+          128         1000       342.30       377.57       354.94
+          256         1000       636.58       700.76       677.12
+          512         1000       815.41       873.83       852.84
+         1024         1000      1402.09      1503.70      1454.18
+         2048         1000      3442.77      4101.43      3680.30
+         4096         1000      6791.86      8170.36      7111.43
+         8192         1000     11391.98     13385.99     11906.29
+        16384         1000     21681.53     24908.44     22820.48
+        32768          608     43338.40     50661.51     46030.35
+        65536          282     89389.94    108268.39     94847.51
+       131072          133    180484.06    218551.27    190696.12
+       262144           60    368189.81    457917.13    392016.87
+       524288           27    751732.04    933202.56    796497.83
+      1048576           14   1535469.08   1887710.39   1611643.03
+      2097152 int-overflow.; The production rank*size caused int overflow for given sample
+      4194304 int-overflow.; The production rank*size caused int overflow for given sample
+
+
+# All processes entering MPI_Finalize
+
+#------------------------------------------------------------
+#    Intel(R) MPI Benchmarks 2018, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Thu Mar  7 13:19:28 2019
+# Machine               : aarch64
+# System                : Linux
+# Release               : 4.4.156-94.64-default
+# Version               : #1 SMP Fri Oct 19 07:43:21 UTC 2018 (31f2eb8)
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+
+# Calling sequence was: 
+
+# ./IMB-MPI1 Alltoallv -npmin 1024 -mem 4 -time 30
+#           
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Alltoallv
+
+#----------------------------------------------------------------
+# Benchmarking Alltoallv 
+# #processes = 1024 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+            0         1000        21.14        25.03        24.09
+            1         1000     11136.37     11633.90     11438.23
+            2         1000     11220.93     11769.29     11552.23
+            4         1000     11308.53     11818.24     11600.54
+            8         1000     11295.12     11798.31     11620.48
+           16         1000     11037.64     11513.25     11341.55
+           32         1000     11027.37     11528.10     11351.75
+           64         1000     11644.42     12069.38     11919.89
+          128         1000     12880.96     13282.06     13143.24
+          256         1000     14229.39     14637.22     14483.56
+          512         1000     17975.85     18538.87     18285.48
+         1024         1000     25180.20     25900.96     25653.53
+         2048          649     44892.56     45810.68     45421.41
+         4096          365     81445.22     82542.31     82102.74
+         8192          200    148057.65    149987.65    149200.79
+        16384          106    278585.70    283783.84    281703.25
+        32768           50    597517.88    608266.38    603018.02
+        65536           31    946774.60    961475.53    955965.84
+       131072           15   1841229.62   1878095.47   1863269.64
+       262144            8   3796644.41   3884603.62   3848460.14
+       524288            5   7519508.90   7647301.17   7585046.55
+      1048576            3  15225789.78  15773225.48  15544344.71
+      2097152 int-overflow.; The production rank*size caused int overflow for given sample
+      4194304 int-overflow.; The production rank*size caused int overflow for given sample
+
+
+# All processes entering MPI_Finalize
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+#PBS -l nodes=32:ppn=64
+
+module load mpi/openmpi/gnu-8.2/4.0.0_opt
+
+cd $PBS_O_WORKDIR
+
+
+
+mpirun -npernode 64 -n 128 --bind-to core --map-by core --mca btl ^openib -x UCX_TLS=shm,ud ./IMB-MPI1 Allgatherv -npmin 128 -mem 4
+mpirun -npernode 64 -n 128 --bind-to core --map-by core --mca btl ^openib -x UCX_TLS=shm,ud ./IMB-MPI1 Alltoallv -npmin 128 -mem 4
